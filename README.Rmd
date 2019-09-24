@@ -17,19 +17,21 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The heart of this package is a single function called `textme()` that sends you a text message 📱 the instant a long-running job completes. This allows you to leave your computer while running code, and know exactly when to return 🎉.  
+The heart of this package is a single function called `textme()` that sends you a text message 📱 the instant a long-running job completes. 
+
+This allows you to leave your computer while running code, and know exactly when to return 🎉.  
 
 ![](https://pbs.twimg.com/media/EEO4ugSUcAA_x2C?format=jpg&name=900x900)
 
 ## Installation
 
-You can install the released version of textme from [CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of textme from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("textme")
-```
+<!-- ``` r -->
+<!-- install.packages("textme") -->
+<!-- ``` -->
 
-Or install the development version from github:
+Install the development version from github:
 
 ```r
 devtools::install_github("richpauloo/textme")
@@ -37,7 +39,9 @@ devtools::install_github("richpauloo/textme")
 
 ## Example
 
-Before sending any messages, you need to provide information about your twilio account and the number you want to text.  
+First, sign up for a [free Twilio trial account](https://www.twilio.com/). 
+
+Then, provide information about your twilio account and the number you want to text.  
 
 ```{r setup, eval = FALSE}
 library(textme)
@@ -54,3 +58,10 @@ The above code needs to be run only once. Now, and in future R sessions, simply 
 ```{r eval = FALSE}
 textme()
 ```
+
+You can supply a custom message with the `message` argument: 
+
+```{r, eval = FALSE}
+textme(message = "Back to work! You're not paid to run around and drink coffee all day!")
+```
+

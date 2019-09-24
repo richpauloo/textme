@@ -9,6 +9,7 @@
 
 The heart of this package is a single function called `textme()` that
 sends you a text message 📱 the instant a long-running job completes.
+
 This allows you to leave your computer while running code, and know
 exactly when to return 🎉.
 
@@ -16,14 +17,15 @@ exactly when to return 🎉.
 
 ## Installation
 
-You can install the released version of textme from
-[CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of textme from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("textme")
-```
+<!-- ``` r -->
 
-Or install the development version from github:
+<!-- install.packages("textme") -->
+
+<!-- ``` -->
+
+Install the development version from github:
 
 ``` r
 devtools::install_github("richpauloo/textme")
@@ -31,8 +33,11 @@ devtools::install_github("richpauloo/textme")
 
 ## Example
 
-Before sending any messages, you need to provide information about your
-twilio account and the number you want to text.
+First, sign up for a [free Twilio trial
+account](https://www.twilio.com/).
+
+Then, provide information about your twilio account and the number you
+want to text.
 
 ``` r
 library(textme)
@@ -49,4 +54,10 @@ simply run the following to text yourself.
 
 ``` r
 textme()
+```
+
+You can supply a custom message with the `message` argument:
+
+``` r
+textme(message = "Back to work! You're not paid to run around and drink coffee all day!")
 ```
