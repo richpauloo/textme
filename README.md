@@ -10,8 +10,9 @@
 The heart of this package is a single function called `textme()` that
 sends you a text message 📱 the instant a long-running job completes ⌛✔️.
 
-This allows you to leave your computer while running code, and know
-exactly when to return 🎉.
+Now you can leave the computer while it crunches away. Go get a cofee,
+hit the gym, or work on other things\! You’ll be notified exactly when
+your job completes 🎉.
 
 ![](https://github.com/richpauloo/junkyard/blob/master/img/textme.png?raw=true)
 
@@ -25,8 +26,8 @@ exactly when to return 🎉.
 
 <!-- ``` -->
 
-`textme` is not currently on CRAN. Install the development version from
-github:
+**textme** is not currently on CRAN. Install the development version
+from github:
 
 ``` r
 devtools::install_github("richpauloo/textme")
@@ -39,14 +40,15 @@ First, sign up for a free Twilio trial account.
   - Use my [referral link](https://www.twilio.com/referral/rIaK9w), and
     you and I will both get $10 in free credit if you wish to upgrade
     (\~1,250 messages).  
-  - Use the [regular sign up](https://www.twilio.com/), and bypass the
-    bonus (you can always use the referral link later if you want to
-    upgrade your free trial version).
+  - Use the [regular sign up](https://www.twilio.com/) (you can always
+    use the referral link later if you want to upgrade your free trial
+    version).
 
 Next, set up a project and verify your number.
 
 Then, provide information about your twilio account and the number you
-want to text.
+want to text. These variables are stored in `"~/.Renviron"` for later
+use.
 
 ``` r
 library(textme)
@@ -59,22 +61,26 @@ tm_configure(twilio_sid   = "AC1ffb4917879549a0f0720c0214bde131",
 ```
 
 The above code needs to be run only once. Now, and in future R sessions,
-simply run the following to text yourself.
+simply throw a `textme()` at the end of a long-running job (**textme**
+comes pre-loaded with a handful of fun messages):
 
 ``` r
-textme()
+Sys.sleep(5) # some long-running job
+textme()     # text me when it's done!
 ```
 
-You can supply a custom message with the `message` argument:
+Or, you can supply a custom message with the `message` argument:
 
 ``` r
-textme(message = "Back to work! You're not paid to run around and drink coffee all day!")
+textme(message = "👹 Back to work! You're not paid to run around and drink ☕ all day!")
 ```
 
 ## Acknowledgments
 
-This package wouldn’t be possible without the [{ twilio
-}](https://github.com/seankross/twilio) package from Sean Kross, [{
-devtools }](https://github.com/r-lib/devtools), [{
+This package is inspired by \[{ beepr
+}(<https://www.r-project.org/nosvn/pandoc/beepr.html>) wouldn’t be
+possible without the [{ twilio }](https://github.com/seankross/twilio)
+package from Sean Kross, [{ devtools
+}](https://github.com/r-lib/devtools), [{
 roxygen2}](https://github.com/r-lib/roxygen2), and
 [RStudio](https://www.rstudio.com/).
