@@ -36,9 +36,9 @@ devtools::install_github("richpauloo/textme")
 
 First, sign up for a free Twilio trial account.
 
-  - Use my [referral link](www.twilio.com/referral/rIaK9w), and you and
-    I will both get $10 in free credit if you wish to upgrade (\~1,250
-    messages).  
+  - Use my [referral link](https://www.twilio.com/referral/rIaK9w), and
+    you and I will both get $10 in free credit if you wish to upgrade
+    (\~1,250 messages).  
   - Use the [regular sign up](https://www.twilio.com/), and bypass the
     bonus (you can always use the referral link later if you want to
     upgrade your free trial version).
