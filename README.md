@@ -13,7 +13,7 @@ sends you a text message 📱 the instant a long-running job completes.
 This allows you to leave your computer while running code, and know
 exactly when to return 🎉.
 
-![](F:/Downloads/repository-open-graph-template.png)
+![](https://github.com/richpauloo/junkyard/blob/master/img/textme.png?raw=true)
 
 ## Installation
 
