@@ -77,8 +77,8 @@ textme(message = "👹 Back to work! You're not paid to run around and drink ☕
 
 ## Acknowledgments
 
-This package is inspired by \[{ beepr
-}(<https://www.r-project.org/nosvn/pandoc/beepr.html>) wouldn’t be
+This package is inspired by [{ beepr
+}](https://www.r-project.org/nosvn/pandoc/beepr.html) wouldn’t be
 possible without the [{ twilio }](https://github.com/seankross/twilio)
 package from Sean Kross, [{ devtools
 }](https://github.com/r-lib/devtools), [{
