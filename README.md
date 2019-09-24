@@ -70,8 +70,6 @@ You can supply a custom message with the `message` argument:
 textme(message = "Back to work! You're not paid to run around and drink coffee all day!")
 ```
 
------
-
 ## Acknowledgments
 
 This package wouldn’t be possible without the [{ twilio
