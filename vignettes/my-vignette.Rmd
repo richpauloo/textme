@@ -1,0 +1,66 @@
+---
+title: "Send text message notifications from R"
+author: "Rich Pauloo"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Some R users run code that takes a long time to process. To notify users when code is done execuing, the [`beepr`](https://cran.r-project.org/web/packages/beepr/index.html) package is a great tool that plays a sound on the computer.  
+
+In the spirit of `beepr::beep()`, this package provides a single function called `textme()` that sends you a text message the instant a long-running job completes. This allows you to leave your computer while running code, and know exactly when to return.  
+
+***
+
+This package relies on Twilio to send text messages. Presently, free trial accounts are avaialble. Sign up for a [twilio account here](https://www.twilio.com/).  
+
+On the user dashboard, take note of three pieces of information:  
+
+* Twilio SID  
+* Twilio token
+* Twilio phone number  
+
+You only need to set these variables once. Afterward, they are stored in the `.Renviron` file of your home directory. To store these variables, use `tm_configure()`. It is recommended that you set a target phone number as well--this should be **your phone number**, where you want to **receive** text messages.    
+
+```{r setup, eval = FALSE}
+library(textme)
+
+# replace the values here with your own
+tm_configure(twilio_sid   = "AC1ffb4919a0f0720787954c0214bde131",
+             twilio_token = "f5c8daf3e8904b9af81dda09f975c369",
+             twilio_phone_number = "1234567890",
+             target_phone_number = "0987654321")
+```
+
+Once you've configured your environment, you should be able to send a text message. In future sessions, you don't need to re-configure anything. You should be able to simply run `textme()` and `R` will load your stored SID, token, and phone numbers.  
+
+```{r eval = FALSE}
+textme()
+```
+
+To send a custom message, simply supply a `message` argument:
+```{r, eval = FALSE}
+textme(message = "My custom message.")
+```
+
+To send a message to another number, supply a new `target_phone_number`: 
+```{r, eval = FALSE}
+textme(target_phone_number = "1112223333")
+```
+
+
+
+
+
+
+

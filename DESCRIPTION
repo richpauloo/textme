@@ -1,0 +1,24 @@
+Package: textme
+Type: Package
+Title: Text message yourself from R.
+Version: 0.0.0.9000
+Authors@R: person("Rich", "Pauloo", email = "richpauloo@gmail.com", role = c("aut", "cre"))
+Maintainer: Rich Pauloo <richpauloo@gmail.com>
+Description: This package will be familiar to fans of beepr.
+    The main function of this package is textme(), which sends
+    you a text message from R. By adding a textme() to a long-running
+    job, you can leave the computer while it's processing, and receive 
+    a text message via the instant that your job finishes. This package
+    uses Twilio to send text messages, and thus requires a Twilio account.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    twilio (>= 0.1.0)
+URL: https://richpauloo.github.io/textme
+BugReports: https://github.com/richpauloo/textme/issues
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
