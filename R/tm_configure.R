@@ -11,8 +11,8 @@
 #' @examples
 #'
 #' # set parameters
-#' tm_configure(twilio_sid   = "AC1ffb4919a0f0720787954c0214bde131",
-#'              twilio_token = "f5c8daf3e8904b9af81dda09f975c369",
+#' tm_configure(twilio_sid   = "AC1ffb497954c02119a0f0720784bde131",
+#'              twilio_token = "f5c8af81ddadaf3e8904b909f975c369",
 #'              twilio_phone_number = "1234567890",
 #'              target_phone_number = "0987654321")
 #'
