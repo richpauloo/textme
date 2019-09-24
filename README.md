@@ -8,7 +8,7 @@
 <!-- badges: end -->
 
 The heart of this package is a single function called `textme()` that
-sends you a text message 📱 the instant a long-running job completes.
+sends you a text message 📱 the instant a long-running job completes ⌛✔️.
 
 This allows you to leave your computer while running code, and know
 exactly when to return 🎉.
@@ -25,7 +25,8 @@ exactly when to return 🎉.
 
 <!-- ``` -->
 
-Install the development version from github:
+`textme` is not currently on CRAN. Install the development version from
+github:
 
 ``` r
 devtools::install_github("richpauloo/textme")
