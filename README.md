@@ -37,14 +37,19 @@ devtools::install_github("richpauloo/textme")
 
 First, sign up for a free Twilio trial account.
 
-  - Use my [referral link](https://www.twilio.com/referral/rIaK9w), and
-    you and I will both get $10 in free credit if you wish to upgrade
-    (\~1,250 messages).  
-  - Use the [regular sign up](https://www.twilio.com/) (you can always
-    use the referral link later if you want to upgrade your free trial
-    version).
+1.  [regular sign up](https://www.twilio.com/)  
+2.  [my referral link](https://www.twilio.com/referral/rIaK9w), and if
+    you decide down the line to upgrade to a paid Twilio account (I have
+    one), you and I both get $10 in free credit (\~1,250 messages).
 
-Next, set up a project and verify your number.
+It doesn’t matter to me which road you take. Go for option 1. just to
+get started.
+
+Next, [set up a
+project](https://support.twilio.com/hc/en-us/articles/360011177133-View-and-Create-New-Projects-in-Twilio-Console)
+and [verify your
+number](https://support.twilio.com/hc/en-us/articles/223180048-Adding-a-Verified-Phone-Number-or-Caller-ID-with-Twilio).
+The Twilio docs are good for this.
 
 Then, provide information about your twilio account and the number you
 want to text. These variables are stored in `"~/.Renviron"` for later
