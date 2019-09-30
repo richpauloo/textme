@@ -43,7 +43,7 @@ First, sign up for a free Twilio trial account.
     one), you and I both get $10 in free credit (\~1,250 messages).
 
 It doesn’t matter to me which road you take. Go for option 1. just to
-get started.
+get started and to avoid ponzi-scheme vibes.
 
 Next, [set up a
 project](https://support.twilio.com/hc/en-us/articles/360011177133-View-and-Create-New-Projects-in-Twilio-Console)
@@ -53,7 +53,9 @@ The Twilio docs are good for this.
 
 Then, provide information about your twilio account and the number you
 want to text. These variables are stored in `"~/.Renviron"` for later
-use.
+use. The benefit of doing it this way is that it’s virtually impossible
+to accidentally push these credentials to Github, which is likely if you
+save them in scripts.
 
 ``` r
 library(textme)

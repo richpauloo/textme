@@ -58,7 +58,7 @@ tm_configure <- function(twilio_sid = NULL,
 
   # if a Twilio SID is already set, but overwrite permission isn't granted
   if (sum(grepl("TWILIO_SID", renv)) > 0 & isFALSE(overwrite))
-    stop ("TWILIO_SID is already set in .Renviron. If you wish to overwrite it, set the `overwrite` arguemnt to TRUE.")
+    stop ("TWILIO_SID is already set in .Renviron. If you wish to overwrite it, set the `overwrite` argument to TRUE.")
 
   # if a Twilio SID is already set, and overwrite permission is granted
   if (sum(grepl("TWILIO_SID", renv)) > 0 & isTRUE(overwrite))
@@ -69,7 +69,7 @@ tm_configure <- function(twilio_sid = NULL,
 
   # if a Twilio token is already set, but overwrite permission isn't granted
   if (sum(grepl("TWILIO_TOKEN", renv)) > 0 & isFALSE(overwrite))
-    stop ("TWILIO_TOKEN is already set in .Renviron. If you wish to overwrite it, set the `overwrite` arguemnt to TRUE.")
+    stop ("TWILIO_TOKEN is already set in .Renviron. If you wish to overwrite it, set the `overwrite` argument to TRUE.")
 
   # if a Twilio token is already set, and overwrite permission is granted
   if (sum(grepl("TWILIO_TOKEN", renv)) > 0 & isTRUE(overwrite))
@@ -80,7 +80,7 @@ tm_configure <- function(twilio_sid = NULL,
 
   # if a Twilio token is already set, but overwrite permission isn't granted
   if (sum(grepl("TWILIO_PHONE_NUMBER", renv)) > 0 & isFALSE(overwrite))
-    stop ("TWILIO_PHONE_NUMBER is already set in .Renviron. If you wish to overwrite it, set the `overwrite` arguemnt to TRUE.")
+    stop ("TWILIO_PHONE_NUMBER is already set in .Renviron. If you wish to overwrite it, set the `overwrite` argument to TRUE.")
 
   # if a Twilio token is already set, and overwrite permission is granted
   if (sum(grepl("TWILIO_PHONE_NUMBER", renv)) > 0 & isTRUE(overwrite))
@@ -92,7 +92,7 @@ tm_configure <- function(twilio_sid = NULL,
 
   # if a Twilio token is already set, but overwrite permission isn't granted
   if (sum(grepl("TARGET_PHONE_NUMBER", renv)) > 0 & isFALSE(overwrite))
-    stop ("TARGET_PHONE_NUMBER is already set in .Renviron. If you wish to overwrite it, set the `overwrite` arguemnt to TRUE.")
+    stop ("TARGET_PHONE_NUMBER is already set in .Renviron. If you wish to overwrite it, set the `overwrite` argument to TRUE.")
 
   # if a Twilio token is already set, and overwrite permission is granted
   if (sum(grepl("TARGET_PHONE_NUMBER", renv)) > 0 & isTRUE(overwrite))
@@ -143,7 +143,7 @@ tm_configure <- function(twilio_sid = NULL,
   # verify success
   # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  cat("Success! You've stored enrionmental variables, and your new .Renvion file looks like this: ")
+  cat("Success! You've stored your Twilio credentials as environmental variables in '~/.Renviron', and your new .Renvion file looks like this: ")
   cat(paste(c("\n", renv), collapse="\n"))
 
 }
