@@ -75,7 +75,7 @@ Sys.sleep(5) # some long-running job
 textme()     # text me when it's done!
 ```
 
-Or, you can supply a custom message with the `message` argument:
+Supply a custom message:
 
 ``` r
 textme(message = "👹 Back to work! You're not paid to run around and drink ☕ all day!")
