@@ -38,11 +38,11 @@ devtools::install_github("richpauloo/textme")
 First, sign up for a free Twilio trial account.
 
 1.  [regular sign up](https://www.twilio.com/)  
-2.  [my referral link](https://www.twilio.com/referral/rIaK9w), and if
-    you decide down the line to upgrade to a paid Twilio account (I have
-    one), you and I both get $10 in free credit (\~1,250 messages).
+2.  [my referral link](https://www.twilio.com/referral/rIaK9w). If
+    you decide to upgrade to a paid Twilio account (I have
+    one), you and I both get $10 in free credit.
 
-If 2. gives you ponzi-scheme vibes, go for option 1. It doesn’t matter to me which road you take.  
+If option 2 gives you ponzi-scheme vibes, go for option 1. It doesn’t matter to me which road you take.  
 
 Next, [set up a
 project](https://support.twilio.com/hc/en-us/articles/360011177133-View-and-Create-New-Projects-in-Twilio-Console)
