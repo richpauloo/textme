@@ -42,8 +42,7 @@ First, sign up for a free Twilio trial account.
     you decide down the line to upgrade to a paid Twilio account (I have
     one), you and I both get $10 in free credit (\~1,250 messages).
 
-It doesn’t matter to me which road you take. Go for option 1. just to
-get started and to avoid ponzi-scheme vibes.
+If 2. gives you ponzi-scheme vibes, go for option 1. It doesn’t matter to me which road you take.  
 
 Next, [set up a
 project](https://support.twilio.com/hc/en-us/articles/360011177133-View-and-Create-New-Projects-in-Twilio-Console)
