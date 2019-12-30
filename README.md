@@ -7,6 +7,10 @@
 
 <!-- badges: end -->
 
+Major thanks to Sean Kross for the [{ twilio 
+}](https://github.com/seankross/twilio) package,
+which this package relies entirely upon.  
+
 The heart of this package is a single function called `textme()` that
 sends you a text message 📱 the instant a long-running job completes ⌛✔️.
 
@@ -85,8 +89,7 @@ textme(message = "👹 Back to work! You're not paid to run around and drink ☕
 
 This package is inspired by [{ beepr
 }](https://www.r-project.org/nosvn/pandoc/beepr.html), and wouldn’t be
-possible without the [{ twilio }](https://github.com/seankross/twilio)
-package from Sean Kross, [{ devtools
+possible without [{ devtools
 }](https://github.com/r-lib/devtools), [{
 roxygen2}](https://github.com/r-lib/roxygen2), and
 [RStudio](https://www.rstudio.com/).
