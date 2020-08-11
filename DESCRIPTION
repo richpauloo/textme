@@ -20,5 +20,6 @@ BugReports: https://github.com/richpauloo/textme/issues
 RoxygenNote: 6.1.1
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    pkgdown
 VignetteBuilder: knitr
